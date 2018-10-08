@@ -96,7 +96,7 @@
       (t/move-cursor term (:x (:cursor state)) (:y (:cursor state))))))
 
 (defn -get-lines
-  "Returns an array of lines, given a file path"
+  "Returns an array of lines from a file, given a file path"
   [file-path]
   (clojure.string/split-lines (slurp file-path)))
 
