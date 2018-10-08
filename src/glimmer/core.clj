@@ -69,7 +69,7 @@
         s))))
 
 (defn render
-  "Renders lines + cursor to the terminal"
+  "Renders lines and cursor to the terminal"
   [term state]
   (let [size (:size state)]
     (when (= 0 (second size)) (state/update-state :size (t/get-size term)))
